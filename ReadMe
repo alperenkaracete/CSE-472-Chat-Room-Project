@@ -1,0 +1,36 @@
+Project expalanation:
+This project provides users with a chat server featuring 10 rooms, with these set of attributes:
+
+Speed and Efficiency.
+Good and understable GUI.
+Chatting Anonymous (does not requires any information from users.People can chat with nicknames) within 10 Rooms.
+Providing security of sended and received messages. (Encryption and decryption)
+
+For running code firstly if operating system is linux:
+sudo apt-get install libgtk-3-dev.
+you should run this command on terminal and install gtk.
+Write console to "make" for compile both client.c and server.c
+Than firstly run server.out with ./server.out command.
+After you can run clients with client.out command.
+After openning client program asks you to enter user name and room number.
+After giving username and room number, you can communicate clients which is in same room.
+For seeing commands you should write 'commands' to client window.
+With 'showRooms' command you can see how many clients are there in 10 rooms.
+With 'changeRoom <Room number>' you can change your room. For example -> changeRoom 2 is change your room to room 2.
+You can scroll up or down on client window for seeing messages.
+Your messages seems you on blue colour and on the right of the client window, other clients seems on yellow color and on the left of the client window.
+You can exit from client by pressing clossing button (x) on top right of the client.
+Server must be runned before client enters name for connect!!
+Program did not tested on other operating systems but on linux it works good.
+
+Files:
+readMe -> Instructions about program.
+client.c -> client's source code.
+server.c -> server's source code.
+Makefile -> Makefile for compiling file with only 'make' command. With 'make clean' command, you can delete .o files again.
+
+After compiling:
+client.o -> compiled client file.
+server.o -> compiled server file.
+client.out -> executable file for running client.
+server.out -> executable file for running server.
